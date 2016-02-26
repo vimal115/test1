@@ -10,8 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/pic1"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.edkul.vimal.edkul.welcomepage"
-    tools:showIn="@layout/activity_welcomepage">
+    tools:context="com.edkul.vimal.edkul.welcomepage">
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,5 +19,82 @@
         android:text="@string/welcomePage"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="@string/loginEmail"
+        android:width="300dp"
+        android:background="@android:color/white"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="@string/loginPassword"
+        android:width="300dp"
+        android:background="@android:color/white"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:text="@string/loginButton"
+        android:id="@+id/button"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/forgotPass"
+        android:textColor="#000000"
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/notonEdkul"
+        android:id="@+id/textView3"
+        android:textColor="#000000"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/joinNow"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
 </RelativeLayout>
