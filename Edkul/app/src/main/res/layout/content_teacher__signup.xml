@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/pic6"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.edkul.vimal.edkul.Teacher_Signup"
+    tools:showIn="@layout/activity_teacher__signup">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/teacherSignup"
+        android:id="@+id/textView4"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/teacherName"
+        android:ems="10"
+        android:textColor="#33b5e5"
+        android:width="300dp"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:id="@+id/editText7"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:hint="@string/teacherEmail"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:width="300dp"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/editText7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="@string/teacherPassword"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:width="300dp"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:id="@+id/editText9"
+        android:layout_below="@+id/editText8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText10"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:width="300dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:hint="@string/teachercPassword"
+        android:layout_below="@+id/editText9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="@string/teacherContact"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:width="300dp"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:id="@+id/editText11"
+        android:layout_below="@+id/editText10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:width="300dp"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:hint="@string/teacherInstitute"
+        android:id="@+id/editText12"
+        android:layout_below="@+id/editText11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
