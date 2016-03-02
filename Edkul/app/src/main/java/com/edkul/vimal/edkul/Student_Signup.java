@@ -22,7 +22,7 @@ public class Student_Signup extends AppCompatActivity {
     EditText studentInstitute;
     EditText studentContact;
     TextView textView;
-    DatabaseHandler dbHandler;
+    //DatabaseHandler dbHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +32,13 @@ public class Student_Signup extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                addButtonClicked();
+                //addButtonClicked();
             }
         });
     }
 
     // add etnry to database
-    public void addButtonClicked(){
+    /*public void addButtonClicked(){
         studentName = (EditText) findViewById(R.id.studentName);
         studentEmail = (EditText) findViewById(R.id.studentEmail);
         studentPassword = (EditText) findViewById(R.id.studentPassword);
@@ -50,6 +50,6 @@ public class Student_Signup extends AppCompatActivity {
                 studentPassword.getText().toString(),studentCpassword.getText().toString(),
                 studentInstitute.getText().toString(),studentContact.getText().toString());
         dbHandler.addStudent(stRecord);
-    }
+    }*/
 
 }
