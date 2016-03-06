@@ -27,13 +27,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/teacherName"
+        android:hint="@string/teacherName"
         android:ems="10"
-        android:textColor="#33b5e5"
+        android:textColorHint="@android:color/holo_blue_light"
         android:width="300dp"
         android:textSize="25sp"
         android:padding="5dp"
-        android:id="@+id/editText7"
+        android:id="@+id/teacherName"
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -44,14 +44,14 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/editText8"
+        android:id="@+id/teacherEmail"
         android:hint="@string/teacherEmail"
         android:textColorHint="@android:color/holo_blue_light"
         android:width="300dp"
         android:textSize="25sp"
         android:padding="5dp"
         android:layout_marginTop="15dp"
-        android:layout_below="@+id/editText7"
+        android:layout_below="@+id/teacherName"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -66,8 +66,8 @@
         android:width="300dp"
         android:textSize="25sp"
         android:padding="5dp"
-        android:id="@+id/editText9"
-        android:layout_below="@+id/editText8"
+        android:id="@+id/teacherPassword"
+        android:layout_below="@+id/teacherEmail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -76,14 +76,14 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText10"
+        android:id="@+id/teacherCpassword"
         android:textColorHint="@android:color/holo_blue_light"
         android:width="300dp"
         android:layout_marginTop="15dp"
         android:textSize="25sp"
         android:padding="5dp"
         android:hint="@string/teachercPassword"
-        android:layout_below="@+id/editText9"
+        android:layout_below="@+id/teacherPassword"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -98,8 +98,8 @@
         android:width="300dp"
         android:textSize="25sp"
         android:padding="5dp"
-        android:id="@+id/editText11"
-        android:layout_below="@+id/editText10"
+        android:id="@+id/contactInfo"
+        android:layout_below="@+id/teacherCpassword"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -114,8 +114,20 @@
         android:textSize="25sp"
         android:padding="5dp"
         android:hint="@string/teacherInstitute"
-        android:id="@+id/editText12"
-        android:layout_below="@+id/editText11"
+        android:id="@+id/teacherInstitute"
+        android:layout_below="@+id/contactInfo"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/teacherSubmit"
+        android:layout_marginTop="46dp"
+        android:textSize="25sp"
+        android:id="@+id/submitButton2"
+        android:background="@drawable/custom_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
 </RelativeLayout>

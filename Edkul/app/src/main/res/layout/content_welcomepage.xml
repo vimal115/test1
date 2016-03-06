@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:id="@+id/studentName"
+        android:id="@+id/parentStudent"
         android:hint="@string/loginEmail"
         android:width="300dp"
         android:textAlignment="center"
@@ -54,8 +54,8 @@
         android:padding="5dp"
         android:layout_marginTop="20dp"
         android:layout_above="@+id/loginButton"
-        android:layout_alignLeft="@+id/studentName"
-        android:layout_alignStart="@+id/studentName" />
+        android:layout_alignLeft="@+id/parentStudent"
+        android:layout_alignStart="@+id/parentStudent" />
 
     <Button
         android:text="@string/loginButton"

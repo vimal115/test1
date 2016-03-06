@@ -50,4 +50,6 @@
     <string name="studentProfile">UserProfile</string>
     <string name="submitStudent">Submit</string>
     <string name="studentInstitute">Name</string>
+    <string name="teacherSubmit">Submit</string>
+    <string name="parentSubmit">Submit</string>
 </resources>
