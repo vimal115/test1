@@ -12,6 +12,8 @@ import android.content.Context;
 import android.content.ContentValues;
 import android.util.Log;
 
+import java.util.ArrayList;
+
 public class DatabaseHandler extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 4;
@@ -169,21 +171,20 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     // print the database as a string
 
-    public String databaseToString(){
-        String dbString = "";
-        SQLiteDatabase db = getWritableDatabase();
-        String query = "SELECT * FROM " + TABLE_STUDENT + "WHERE 1";
-        Cursor c = db.rawQuery(query,null);
-        c.moveToFirst();
-        while (!c.isAfterLast()) {
-            if (c.getString(c.getColumnIndex("studentName")) != null){
-                dbString += c.getString(c.getColumnIndex("studentName"));
-                dbString += "\n";
-            }
-        }
-        db.close();
-        return dbString;
-    }
+    public ArrayList<String> getAllCotacts()
+    {
+        ArrayList<String> array_list = new ArrayList<String>();
 
+        //hp = new HashMap();
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res =  db.rawQuery("select * from StudentRecords", null);
+        res.moveToFirst();
+
+        while(res.isAfterLast() == false){
+            array_list.add(res.getString(res.getColumnIndex(COLUMN_STUDENTNAME)));
+            res.moveToNext();
+        }
+        return array_list;
+    }
 
 }

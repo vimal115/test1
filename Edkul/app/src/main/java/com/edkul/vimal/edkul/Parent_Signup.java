@@ -30,7 +30,7 @@ public class Parent_Signup extends AppCompatActivity {
             public void onClick(View view) {
                 Log.e("Start Function", "to get the values");
                 addButtonClicked();
-                Log.e("End function", "Start storing data in db");
+                Log.d("End function",dbHandler.getAllCotacts().toString());
             }
         });
     }
