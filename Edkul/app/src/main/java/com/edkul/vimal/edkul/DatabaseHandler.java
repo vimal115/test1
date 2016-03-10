@@ -128,7 +128,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         values.put(COLUMN_PASSWORD1,teacherRecord.get_Password());
         values.put(COLUMN_CPASSWORD1,teacherRecord.get_Cpassword());
         values.put(COLUMN_INSTITUTE1,teacherRecord.get_Institute());
-        values.put(COLUMN_CONTACTNO1,teacherRecord.get_Contact());
+        values.put(COLUMN_CONTACTNO1, teacherRecord.get_Contact());
         Log.e("Print values here::", teacherRecord.get_Name());
         Log.e("Print values here::",teacherRecord.get_Email());
         Log.e("Print values here::",teacherRecord.get_Password());
@@ -163,7 +163,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     //Delete the student record from the table
-
     public void deleteStudent(String studentName){
         SQLiteDatabase db = getWritableDatabase();
         db.execSQL("DELETE FROM " + TABLE_STUDENT + "WHERE" + COLUMN_STUDENTNAME + "=\" "+ studentName + "\";");
@@ -171,20 +170,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     // print the database as a string
 
-    public ArrayList<String> getAllCotacts()
-    {
-        ArrayList<String> array_list = new ArrayList<String>();
-
-        //hp = new HashMap();
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res =  db.rawQuery("select * from StudentRecords", null);
-        res.moveToFirst();
-
-        while(res.isAfterLast() == false){
-            array_list.add(res.getString(res.getColumnIndex(COLUMN_STUDENTNAME)));
-            res.moveToNext();
-        }
-        return array_list;
+    public Cursor getInformation(DatabaseHandler db,String tableName,String[] columns){
+        SQLiteDatabase sq = db.getReadableDatabase();
+        String[] values = columns;
+        Cursor cr = sq.query(tableName,values,null,null,null,null,null);
+        Log.e("Tablename is"+tableName,"columns are"+values);
+        return cr;
     }
 
 }

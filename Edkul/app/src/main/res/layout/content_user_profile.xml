@@ -9,27 +9,25 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.edkul.vimal.edkul.UserProfile"
-    tools:showIn="@layout/activity_user_profile">
+    tools:context="com.edkul.vimal.edkul.UserProfile">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/userprofile"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/profile"
         android:id="@+id/textView9"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="112dp" />
-
-    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp" />
+    <ImageView
+        android:id="@+id/test_image"
+        android:src="@drawable/pic10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/studentProfile"
-        android:textSize="30sp"
-        android:id="@+id/textView10"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

@@ -10,8 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/pic6"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.edkul.vimal.edkul.Teacher_Signup"
-    tools:showIn="@layout/activity_teacher__signup">
+    tools:context="com.edkul.vimal.edkul.Teacher_Signup">
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,7 +36,7 @@
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -50,7 +49,7 @@
         android:width="300dp"
         android:textSize="25sp"
         android:padding="5dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/teacherName"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -61,7 +60,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:hint="@string/teacherPassword"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:textColorHint="@android:color/holo_blue_light"
         android:width="300dp"
         android:textSize="25sp"
@@ -79,7 +78,7 @@
         android:id="@+id/teacherCpassword"
         android:textColorHint="@android:color/holo_blue_light"
         android:width="300dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:textSize="25sp"
         android:padding="5dp"
         android:hint="@string/teachercPassword"
@@ -93,7 +92,7 @@
         android:inputType="phone"
         android:ems="10"
         android:hint="@string/teacherContact"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:textColorHint="@android:color/holo_blue_light"
         android:width="300dp"
         android:textSize="25sp"
@@ -108,7 +107,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:textColorHint="@android:color/holo_blue_light"
         android:width="300dp"
         android:textSize="25sp"
@@ -123,7 +122,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/teacherSubmit"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="20dp"
         android:textSize="25sp"
         android:id="@+id/submitButton2"
         android:background="@drawable/custom_button"

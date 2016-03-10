@@ -36,8 +36,8 @@ public class Student_Signup extends AppCompatActivity {
 
     // add etnry to database
     public void addButtonClicked(){
-        studentName = (EditText) findViewById(R.id.parentStudent);
-        studentEmail = (EditText) findViewById(R.id.studentEmail);
+        studentName = (EditText) findViewById(R.id.userName);
+        studentEmail = (EditText) findViewById(R.id.passWord);
         studentPassword = (EditText) findViewById(R.id.studentPassword);
         studentCpassword = (EditText) findViewById(R.id.studentCpassword);
         studentInstitute = (EditText) findViewById(R.id.studentInstitute);
