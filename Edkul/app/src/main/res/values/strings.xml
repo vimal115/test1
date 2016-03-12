@@ -41,7 +41,7 @@
     <string name="parentCPassword">Confirm Password</string>
     <string name="parentContact">Contact No.</string>
     <string name="parent_studentName">StudentName</string>
-    <string name="instituteName">Institute</string>
+    <string name="instituteName">Institute Name</string>
     <string name="nextButton2">Next</string>
     <string name="title_activity_forgot_password">ForgotPassword</string>
     <string name="changePassword">Change Your Password</string>
@@ -52,4 +52,35 @@
     <string name="studentInstitute">Name</string>
     <string name="teacherSubmit">Submit</string>
     <string name="parentSubmit">Submit</string>
+    <string name="userImage">userImage</string>
+    <string name="userProfile">Profile</string>
+    <string name="myDashboard">My Dashboard</string>
+    <string name="myDashboard1">myDashboard</string>
+    <string name="myDashboard2">myDashboard2</string>
+    <string name="myDashboard3">myDashboard3</string>
+    <string name="myDashboard4">myDashboard4</string>
+    <string name="myDashboard5">myDashboard5</string>
+    <string name="myDashboard6">myDashboard6</string>
+    <string name="subscribeCourse">Subscribe Course</string>
+    <string name="manageTest"><![CDATA[Manage Test &DPP]]></string>
+    <string name="sheduler">Scheduler</string>
+    <string name="library">Library</string>
+    <string name="marketing">Marketing</string>
+    <string name="updates">Updates</string>
+    <string name="title_activity_subscribe__course">Subscribe_Course</string>
+    <string-array name="instituteSpinner">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="title_activity_manage_test">Manage_test</string>
+    <string name="title_activity_scheduler">Scheduler</string>
+    <string name="title_activity_library">Library</string>
+    <string name="title_activity_marketing">Marketing</string>
+    <string name="title_activity_updates">Updates</string>
 </resources>

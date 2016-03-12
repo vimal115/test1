@@ -18,20 +18,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/userImage" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Profile"
+        android:text="@string/userProfile"
         android:id="@+id/textView9"
-        android:layout_gravity="left"
         android:layout_marginTop="20dp"
         android:textSize="22sp"
         android:layout_marginLeft="@dimen/fab_margin"
         android:textColor="#33b5e5"
-        android:layout_alignTop="@+id/test_image"
+        android:layout_alignRight="@+id/test_image"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -39,10 +39,168 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="My Dashboard"
+        android:text="@string/myDashboard"
         android:textSize="25sp"
         android:id="@+id/textView10"
         android:layout_below="@+id/test_image"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/rectimage1"
+        android:layout_height="100dp"
+        android:layout_width="180dp"
+        android:src="@drawable/rectangle"
+        android:clickable="true"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:background="#009999"
+        android:contentDescription="@string/myDashboard1" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rectangle"
+        android:id="@+id/rectimage2"
+        android:clickable="true"
+        android:background="#009999"
+        android:layout_alignTop="@+id/rectimage1"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:contentDescription="@string/myDashboard2" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rectangle"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:id="@+id/rectimage3"
+        android:background="#009999"
+        android:layout_below="@+id/rectimage2"
+        android:contentDescription="@string/myDashboard3" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rectangle"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rectimage4"
+        android:clickable="true"
+        android:background="#009999"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_below="@+id/rectimage2"
+        android:contentDescription="@string/myDashboard4" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rectangle"
+        android:id="@+id/rectimage5"
+        android:clickable="true"
+        android:layout_marginTop="30dp"
+        android:background="#009999"
+        android:layout_below="@+id/rectimage3"
+        android:contentDescription="@string/myDashboard5" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/rectangle"
+        android:id="@+id/rectimage6"
+        android:clickable="true"
+        android:background="#009999"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_below="@+id/rectimage4"
+        android:contentDescription="@string/myDashboard6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/subscribeCourse"
+        android:id="@+id/textView11"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/rectimage1"
+        android:layout_alignLeft="@+id/rectimage1"
+        android:layout_alignRight="@+id/rectimage1"
+        android:layout_alignBottom="@+id/rectimage1"
+        android:layout_margin="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/manageTest"
+        android:id="@+id/textView12"
+        android:textSize="22sp"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_alignTop="@+id/rectimage2"
+        android:layout_alignLeft="@+id/rectimage2"
+        android:layout_alignRight="@+id/rectimage2"
+        android:layout_alignBottom="@+id/rectimage2"
+        android:layout_margin="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/sheduler"
+        android:id="@+id/textView13"
+        android:textSize="22sp"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_alignTop="@+id/rectimage3"
+        android:layout_alignLeft="@+id/rectimage3"
+        android:layout_alignRight="@+id/rectimage3"
+        android:layout_alignBottom="@+id/rectimage3"
+        android:layout_margin="1dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/library"
+        android:id="@+id/textView14"
+        android:textSize="22sp"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_alignTop="@+id/rectimage4"
+        android:layout_alignLeft="@+id/rectimage4"
+        android:layout_alignRight="@+id/rectimage4"
+        android:layout_alignBottom="@+id/rectimage4"
+        android:layout_margin="1dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/marketing"
+        android:id="@+id/textView15"
+        android:textSize="22sp"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_alignTop="@+id/rectimage5"
+        android:layout_alignLeft="@+id/rectimage5"
+        android:layout_alignRight="@+id/rectimage5"
+        android:layout_alignBottom="@+id/rectimage5"
+        android:layout_margin="1dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/updates"
+        android:id="@+id/textView16"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/rectimage6"
+        android:layout_alignLeft="@+id/rectimage6"
+        android:layout_alignRight="@+id/rectimage6"
+        android:layout_alignBottom="@+id/rectimage6"
+        android:layout_margin="1dp"/>
 
 </RelativeLayout>
