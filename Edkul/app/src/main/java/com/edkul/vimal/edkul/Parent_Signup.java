@@ -35,7 +35,7 @@ public class Parent_Signup extends AppCompatActivity {
                 addButtonClicked();
                 String tableName = "ParentRecords";
                 String[] coloumns = {"ParentName","ParentEmail","ParentPassword","ParentConfirmPassword","InstituteName2","ContactInfo2","StudentName"};
-                Cursor cr1 = dbHandler.getInformation(dbHandler,tableName,coloumns);
+                Cursor cr1 = dbHandler.getInformation();
                 cr1.moveToFirst();
                 do {
                     Log.e("Vimal Mishra",cr1.getString(0));

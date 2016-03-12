@@ -1,7 +1,10 @@
 package com.edkul.vimal.edkul;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -21,6 +24,7 @@ public class welcomepage extends AppCompatActivity {
     private Button btn;
     EditText userName,passWord;
     DatabaseHandler dbHandler;
+    Context ctx =this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,26 +68,41 @@ public class welcomepage extends AppCompatActivity {
                 String username = userName.getText().toString();
                 String userpass = passWord.getText().toString();
                 boolean login_status = false;
-                String tableName = "StudentRecords";
-                String[] columnNames = {"StudentName","StudentEmail","StudentPassword","StudentConfirmPassword","InstituteName","ContactInfo"};
-                Log.i("Tablename is"+tableName.toString(),"columns are"+columnNames[0].toString());
-                Cursor cr1 = dbHandler.getInformation(dbHandler,tableName.toString(),columnNames);
-                String name = "";
-                do {
-                    if (username.equals(cr1.getString(0))&&userpass.equals(cr1.getString(2))){
-                        login_status = true;
-                        name = cr1.getString(0);
-                    }
-                }while(cr1.moveToNext());
-                if (login_status){
-                    Toast.makeText(getBaseContext(),"====Login success==== \n Welcome"+name,Toast.LENGTH_LONG).show();
-                    Intent intentMain = new Intent(welcomepage.this,
-                            UserProfile.class);
-                    startActivity(intentMain);
-                    finish();
-                }else {
-                    Toast.makeText(getBaseContext(),"====Login Failed====",Toast.LENGTH_LONG).show();
-                    finish();
+               try{
+                   DatabaseHandler databaseHandler = new DatabaseHandler(ctx,null,null,4);
+                   SQLiteDatabase sqLiteDatabase = databaseHandler.getReadableDatabase();
+                   Cursor cursor = sqLiteDatabase.rawQuery("SELECT StudentName,StudentPassword FROM StudentRecords;", null);
+                   String name = "";
+                   String pass = "";
+                   if(cursor != null){
+                       if(cursor.moveToFirst()){
+                           do
+                           {
+                               if (username.equals(cursor.getString(0))&&userpass.equals(cursor.getString(1))){
+                                   login_status = true;
+                                   name = cursor.getString(0);
+                                   pass = cursor.getString(1);
+                               }
+
+                           }while(cursor.moveToNext());
+                           if (login_status){
+                               Toast toast = Toast.makeText(getBaseContext(), "Login success Welcome " + name, Toast.LENGTH_LONG);
+                               TextView v = (TextView) toast.getView().findViewById(android.R.id.message);
+                               v.setTextColor(Color.GREEN);
+                               toast.show();
+                               Intent intentMain = new Intent(welcomepage.this,
+                                       UserProfile.class);
+                               startActivity(intentMain);
+                           }else {
+                               Toast toast = Toast.makeText(getBaseContext(), "Login Failed", Toast.LENGTH_LONG);
+                               TextView v = (TextView) toast.getView().findViewById(android.R.id.message);
+                               v.setTextColor(Color.RED);
+                               toast.show();
+                           }
+                       }
+                   }
+               }catch(Exception err){
+                    err.printStackTrace();
                 }
             }
         });

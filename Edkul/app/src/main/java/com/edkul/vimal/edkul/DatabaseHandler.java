@@ -170,11 +170,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
     // print the database as a string
 
-    public Cursor getInformation(DatabaseHandler db,String tableName,String[] columns){
-        SQLiteDatabase sq = db.getReadableDatabase();
-        String[] values = columns;
-        Cursor cr = sq.query(tableName,values,null,null,null,null,null);
-        Log.e("Tablename is"+tableName,"columns are"+values);
+    public Cursor getInformation(){
+        SQLiteDatabase db = getReadableDatabase();
+        String[] columnNames = {"StudentName","StudentEmail","StudentPassword","StudentConfirmPassword","InstituteName","ContactInfo"};
+        String tableName = "StudentRecords";
+        Cursor cr = db.query(tableName,columnNames,null,null,null,null,null);
         return cr;
     }
 
