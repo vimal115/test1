@@ -11,4 +11,13 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.edkul.vimal.edkul.Manage_test">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView19"
+        android:text="@string/manageTest"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

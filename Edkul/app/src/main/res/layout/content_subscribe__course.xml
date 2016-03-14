@@ -40,12 +40,38 @@
         android:id="@+id/instituteSpinner"
         android:spinnerMode="dropdown"
         android:textAlignment="center"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
         android:layout_alignBottom="@+id/textView18"
-        android:layout_toRightOf="@+id/textView18"
-        android:layout_toEndOf="@+id/textView18" />
+        android:layout_alignLeft="@+id/courseSpinner"
+        android:layout_alignStart="@+id/courseSpinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/courseName"
+        android:textSize="30sp"
+        android:id="@+id/textView19"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/textView18"/>
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:id="@+id/courseSpinner"
+        android:spinnerMode="dropdown"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subscribeText"
+        android:id="@+id/subscribeButton"
+        android:layout_below="@+id/textView19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:textSize="25sp"
+        android:background="@drawable/custom_button"/>
 </RelativeLayout>
