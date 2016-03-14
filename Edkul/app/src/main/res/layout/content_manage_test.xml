@@ -18,6 +18,91 @@
         android:id="@+id/textView19"
         android:text="@string/manageTest"
         android:textSize="30sp"
+        style="@style/AudioFileInfoOverlayText"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectInstitute"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="#2a5a85"
+        android:textColor="#fff"/>
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner3"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_toRightOf="@+id/textView20"
+        android:layout_toEndOf="@+id/textView20"
+        android:background="#2a5a85"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectCoursename"
+        android:layout_below="@+id/textView20"
+        android:background="#2a5a85"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner4"
+        android:layout_alignTop="@+id/textView21"
+        android:layout_toRightOf="@+id/textView21"
+        android:layout_toEndOf="@+id/textView21"
+        android:background="#2a5a85"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectGroup"
+        android:layout_below="@+id/textView21"
+        android:background="#2a5a85"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner5"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_toRightOf="@+id/textView22"
+        android:layout_toEndOf="@+id/textView22"
+        android:background="#2a5a85"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectSubject"
+        android:layout_below="@+id/textView22"
+        android:background="#2a5a85"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner6"
+        android:layout_alignTop="@+id/textView23"
+        android:layout_toRightOf="@+id/textView23"
+        android:layout_toEndOf="@+id/textView23"
+        android:background="#2a5a85"
+        android:textAlignment="center"/>
 </RelativeLayout>

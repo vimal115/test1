@@ -13,17 +13,28 @@ import android.widget.Toast;
 
 public class Subscribe_Course extends AppCompatActivity {
 
-    Spinner spinnerDropDown;
-    String[] cities = {
-            "Mumbai",
-            "Delhi",
-            "Bangalore",
-            "Hyderabad",
-            "Ahmedabad",
-            "Chennai",
-            "Kolkata",
-            "Pune",
-            "Jabalpur"
+    Spinner spinnerDropDown1,spinnerDropDown2;
+    String[] institute = {
+            "Shri Mata Vaishno Devi University",
+            "Delhi College of Engineering",
+            "IIT Kanpur",
+            "IIT Mumbai",
+            "IIT Kharagpur",
+            "IIT mandi",
+            "IIT Delhi",
+            "IIT Guwahati",
+            "IIT Madras"
+    };
+    String[] Courses = {
+            "Java Basics",
+            "C/C++",
+            "Ruby",
+            "Paython",
+            "Basic Electronics",
+            "Digital Electronics",
+            "Thermodynamics",
+            "Engineering Grapics",
+            "Catia"
     };
 
     @Override
@@ -31,18 +42,38 @@ public class Subscribe_Course extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subscribe__course);
 
-        spinnerDropDown =(Spinner)findViewById(R.id.spinner1);
-        ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.
-                R.layout.simple_spinner_dropdown_item ,cities);
-        spinnerDropDown.setAdapter(adapter);
-        spinnerDropDown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinnerDropDown1 =(Spinner)findViewById(R.id.spinner1);
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this,android.
+                R.layout.simple_spinner_dropdown_item ,institute);
+        spinnerDropDown1.setAdapter(adapter1);
+        spinnerDropDown1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
                                        int position, long id) {
                 // Get select item
-                int sid = spinnerDropDown.getSelectedItemPosition();
-                Toast.makeText(getBaseContext(), "You have selected City : " + cities[sid],
+                int sid = spinnerDropDown1.getSelectedItemPosition();
+                Toast.makeText(getBaseContext(), "You have selected " + institute[sid],
+                        Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // TODO Auto-generated method stub
+            }
+        });
+        spinnerDropDown2 =(Spinner)findViewById(R.id.spinner2);
+        ArrayAdapter<String> adapter2= new ArrayAdapter<String>(this,android.
+                R.layout.simple_spinner_dropdown_item ,Courses);
+        spinnerDropDown2.setAdapter(adapter2);
+        spinnerDropDown2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view,
+                                       int position, long id) {
+                // Get select item
+                int sid = spinnerDropDown2.getSelectedItemPosition();
+                Toast.makeText(getBaseContext(), "You have selected  " + Courses[sid],
                         Toast.LENGTH_SHORT).show();
             }
 

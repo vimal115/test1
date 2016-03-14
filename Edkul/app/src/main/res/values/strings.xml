@@ -85,4 +85,8 @@
     <string name="title_activity_updates">Updates</string>
     <string name="courseName">Course Name</string>
     <string name="subscribeText">Subscribe</string>
+    <string name="selectInstitute">Select Institute Name : </string>
+    <string name="selectCoursename">Select Course Name : </string>
+    <string name="selectGroup">Select Group Name : </string>
+    <string name="selectSubject">Select Subject Name : </string>
 </resources>
